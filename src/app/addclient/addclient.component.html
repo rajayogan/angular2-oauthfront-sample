@@ -1,0 +1,10 @@
+<div *ngIf="!showids">
+<input type="text" placeholder="App name" [(ngModel)]="name">
+<button (click)="addclient(name)">Add a client</button>
+</div>
+
+<div *ngIf="showids">
+  <h1>Your client is added</h1>
+  <h3>Your appId is {{appid}} and your secret is {{appsecret}}</h3>
+  <button (click)="goback()">Go Back</button>
+  </div>
